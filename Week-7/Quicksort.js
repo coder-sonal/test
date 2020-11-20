@@ -5,12 +5,10 @@ function swap(items, leftIndex, rightIndex){
 }
 
 function partition(items, left, right) {
-    // [10, 20, 80, 50, 70, 30, 40, 60, 90];
     var pivot   = items[Math.floor((right + left) / 2)], //middle element
         i       = left, //left pointer
         j       = right; //right pointer
     while (i <= j) {
-        // console.log("i", i,"j",j,"pivot",pivot);
         while (items[i] < pivot) {
             i++;
         }
@@ -40,6 +38,6 @@ function quickSort(items, left, right) {
     return items;
 }
 
-let arr = [10, 20, 80, 50, 90, 30, 40, 60, 70];
+let arr = [31415926535897932384626433832795,1,3,10,3,5];
 let result = quickSort(arr, 0, arr.length-1);
 console.log(result);
