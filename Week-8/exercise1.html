@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ReactJS Practice 2</title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+        <script  src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script type="text/babel">
+        const element = (
+            <div>
+                <h1>My Todo List</h1>
+                <ul>
+                    <li>Cooking</li>
+                    <li>Cleaning</li>
+                    <li>HomeWork</li>
+                    <li>Painting</li>
+                    <li>Shopping</li>
+                </ul>
+                <h3>My Name is Sonal Singh.I am 30years old.My DOB is 9th-Aug-1990 and my favorite color is Black</h3>
+            </div>);
+            const root = document.getElementById("root");
+            ReactDOM.render(element,root);
+        </script>
+    </body>
+</html>
+<!-- A heading with the text My Todo List
+1 unordered list with 5 elements with todo tasks. Eg: Cooking, cleaning, homework etc.
+A paragraph with the following information about yourself
+Name
+Age
+DOB
+Favorite Color -->
