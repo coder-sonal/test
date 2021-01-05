@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RecatJs Intro 2</title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+        <script  src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script type="text/babel">
+            var todoList = ["shopping","dancing","cleaning","cooking","coding"];
+            var myInfo = {name:"Sonal Singh",
+                        age: 30,
+                        DOB: "09-08-1990",
+                        favColor: "Black"
+                        }
+            var element = (<div>
+                    <h1>My todo list :- {todoList.join(" ")}x</h1>
+                    <h3>My name is {myInfo.name}. I am {myInfo.age}, my date of birth is {myInfo.DOB}. I like {myInfo.favColor} color.</h3>
+                </div>);
+            var root = document.getElementById("root");
+            ReactDOM.render(element , root);
+        </script>
+    </body>
+</html>
